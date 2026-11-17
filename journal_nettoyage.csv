@@ -1,0 +1,10 @@
+﻿Règle,Colonne,Effectif,Justification
+Retrait suffixe FCFA + virgules décimales,facture_moy_fcfa,15,Suffixe textuel et virgules décimales empêchant la conversion numérique
+Facture négative → NaN,facture_moy_fcfa,3,Une facture ne peut pas être négative
+Facture > 500k → NaN,facture_moy_fcfa,7,Valeur irréaliste pour un abonnement internet
+Retrait suffixe Mbps + virgules décimales,debit_moy_mbps,15,Suffixe textuel et virgules décimales empêchant la conversion numérique
+Débit >= 500 Mbps → NaN,debit_moy_mbps,6,900 Mbps irréaliste pour le contexte (ADSL/4G/Fibre au Sénégal)
+"Score satisfaction hors [1,5] → NaN",satisfaction_score,19,Plage attendue du score : 1 à 5
+Normalisation casse/espaces,type_offre,toutes lignes,9 écritures différentes pour 3 offres réelles
+Dates impossibles détectées,mois_reference,6,"Mois 13, 31 février, texte — colonne exclue de la modélisation"
+Doublons client_id → garder 1re occurrence,client_id,25,Un client ne doit apparaître qu'une seule fois par période de prédiction
