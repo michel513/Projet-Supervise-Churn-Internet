@@ -1,0 +1,41 @@
+# Gitignore — Projet Bornes Fontaines
+
+# ── Données brutes (ne pas versionner si sensibles) ──────────────────────────
+mesures_brutes.csv
+
+# ── Environnements Python ─────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Logs & temporaires ────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
